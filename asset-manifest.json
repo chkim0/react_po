@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-po/static/css/main.220ee079.css",
+    "main.js": "/react-po/static/js/main.00747447.js",
+    "index.html": "/react-po/index.html",
+    "main.220ee079.css.map": "/react-po/static/css/main.220ee079.css.map",
+    "main.00747447.js.map": "/react-po/static/js/main.00747447.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.220ee079.css",
+    "static/js/main.00747447.js"
+  ]
+}
