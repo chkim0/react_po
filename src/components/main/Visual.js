@@ -1,5 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
 import Anime from "../../asset/Anime"
-import React, { useRef } from "react"
+import { useRef } from "react"
 
 
 // const btn = {
@@ -11,24 +15,24 @@ const path = process.env.PUBLIC_URL;
 
 export default function Visual() {
 
-    const box = useRef(null);
+  const box = useRef(null);
 
 
-    return (
-        <figure id="visual" className="myScroll">
-                <div className="inner">
-                     <video src={`${path}/img/main_vid.mp4`}
-                     autoplay loop />
-                     <h1>We are making <br/>
-                        real life. 
-                    </h1>
-                    <a href="#">read more about us</a>
-                    
-                    <div className="bbox"></div>
-                    </div>
-                
-          
-            {/* <button
+  return (
+    <figure id="visual" className="myScroll">
+      <di className="inner">
+        <video src={process.env.PUBLIC_URL + '/img/vid.mp4'} loop autoPlay muted></video>
+        <p className='since'>S I N C E 1 9 9 8</p>
+        <h1>We are making <br />
+          real life.
+        </h1>
+        <a href="#">read more about us</a>
+        <span className='scrd'>S C R O L L   D O W N </span>
+        <div className="bbox"></div>
+      </div>
+
+
+      {/* <button
               style ={btn}
               onClick={()=>{
                 new Anime(window,{
@@ -38,7 +42,7 @@ export default function Visual() {
                     
                 })
               }} >button</button> */}
-            <div className='box' ref={box}></div>
-        </figure>
-    )
+      <div className='box' ref={box}></div>
+    </figure>
+  )
 }
